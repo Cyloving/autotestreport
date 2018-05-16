@@ -43,7 +43,6 @@ exec(git_push, function (err, stdout, stderr) {
     }
 });
 
-
 // git add file2.txt
 // git add file3.txt
 // git commit  -m  "add 3 files."
