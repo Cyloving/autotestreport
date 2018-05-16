@@ -1,7 +1,6 @@
 const schedule = require('node-schedule');
-const exec = require('child_process').exec;
+const exec = require('child_process').execSync;
 
-const gitURL = "https://github.com/Cyloving/autotestreport.git";
 // *    *    *    *    *    *
 // ┬    ┬    ┬    ┬    ┬    ┬
 // │    │    │    │    │    │
@@ -24,13 +23,23 @@ const gitURL = "https://github.com/Cyloving/autotestreport.git";
 
 // });
 
-let gitAdd = "git add main.js";
-exec(gitAdd, function (err, stdout, stderr) {
+let git_add = "git add main.js";
+exec(git_add, function (err, stdout, stderr) {
     if (err) {
         console.log('error:' + stderr);
-    } else {
-        // var data = JSON.parse(stdout);
-        console.log(stdout);
+    }
+});
+let git_commit = "git commit  -m  'test.'";
+exec(git_commit, function (err, stdout, stderr) {
+    if (err) {
+        console.log('error:' + stderr);
+    }
+});
+
+let git_push = "git push";
+exec(git_push, function (err, stdout, stderr) {
+    if (err) {
+        console.log('error:' + stderr);
     }
 });
 
