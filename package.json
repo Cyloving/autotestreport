@@ -1,0 +1,23 @@
+{
+  "name": "autotestreport",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cyloving/autotestreport.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cyloving/autotestreport/issues"
+  },
+  "homepage": "https://github.com/Cyloving/autotestreport#readme",
+  "dependencies": {
+    "node-schedule": "^1.3.0"
+  }
+}
